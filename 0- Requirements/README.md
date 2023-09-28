@@ -72,7 +72,7 @@ pip install -r requirements.txt
     param location string = '<AZURE_REGION>'
     ```
 * This powershell script will create:
-    * A resourcegroup ""rg-openai-workshop-"+ yourUniqueIdentifier + "-" + randomstring"
+    * A Resource group ```"rg-openai-workshop-"+ yourUniqueIdentifier + "-" + randomstring"```
     * An Azure SQL server called "<SQLSERVERNAME>+ randomstring", SQL DB(with an AdventureWorks DB) and Firewall rule 
 
 * Login to the azure portal and login with a user that has administrator permissions
@@ -92,7 +92,7 @@ You should get an Azure SQL server with a DB name as you passed for <SQLDBNAME>
 ## Azure Cognitive services speech
 * Go to Azure portal and [Create a Speech resource](https://portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices). Select the Resource group created above, give your unique name and region.
 
-Now all the necessary resources in Azure portal is deployed. 
+Now all the necessary resources in Azure portal are deployed. 
 
 # IMPORTANT!
 ### Setup environment variables
@@ -126,15 +126,18 @@ Save the above file. This completes your environment setup.
 
 Once the enviornment is setup its best to test if everything is working.
 
-1. From the VS Code left pane, go to the a Jupyter notebook called [Setup-test.ipynb](0- Requirements/Setup-test.ipynb) and open it.
-2. From top right corner click on the 'Select kernel' button. It will open the Command pallete with avilable python environments, select the one with name 'venv' which we created and activated at the beginning of this file. If the environment not set properly, you will not able to run the lab exercises. 
+1. From the VS Code left pane, go to the a Jupyter notebook called [Setup-test.ipynb](Setup-test.ipynb) and open it.
+
+2. From top right corner click on the 'Select kernel' button. It will open the Command pallete with avilable python environments, select the one with name 'venv' which we created and activated at the beginning of this file. If the environment not set properly, you will not able to run the lab exercises.
+
 3. The from the Setup-test.ipynb note book run first cell. To run hover the mouse and click on Run button
 ![Run](./images/step6.png)
 This will take 10-15 seconds. This will load all the environment variables in memory.
 If everything is correct the this cell will run without error.
+
 4. Now calling the gpt35-turbo model asking some simple question. Run the second cell of the notebook.
 If the environment variables are correctly given, then this cell will execute correctly and will give output like
 ``` ChatCompletion (gpt-35-turbo) :Good morning! As an AI language model, I don't have emotions, but I'm here to assist you with any question you have. How can I help you today?```
 If you see above output then the Setup is complete and you are ready for the workshop.
-If you didn't get above output or get any errors, you need to check the errors, may be correct the environment vaiables(mostly) and click on "Restart" one top menu to reload the python environment and start executing cell 1 again.
+If you don't get above output or get any errors, you need to check the errors, may be correct the environment variables(mostly) and click on "Restart" one top menu to reload the python environment and start executing cell 1 again.
 5. Once you are done with above, we are ready for workshop labs.

@@ -1,7 +1,7 @@
 $SubscriptionId = '<AZURE SUBSCRIPTION ID>'
 $yourUniqueIdentifier = "<YOUR_UNIQUE_IDENTIFIER>"  # e.g. "johnsmith"
-$randonstring = (-join ( (97..122) | Get-Random -Count 6 | % {[char]$_}))
-$resourceGroupName = "rg-openai-workshop-"+ $yourName + "-" + $randonstring;
+$randomstring = (-join ( (97..122) | Get-Random -Count 6 | % {[char]$_}))
+$resourceGroupName = "rg-openai-workshop-"+ $yourUniqueIdentifier + "-" + $randomstring;
 $location = "<AZURE_REGION>"
 
 

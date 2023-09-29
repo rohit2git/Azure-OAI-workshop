@@ -147,14 +147,14 @@ Once the enviornment is setup its best to test if everything is working.
 
 1. From the VS Code left pane, go to the a Jupyter notebook called [Setup-test.ipynb](Setup-test.ipynb) and open it.
 
-2. From top right corner click on the 'Select kernel' button. It will open the Command pallete with avilable python environments, select the one with name 'venv' which we created and activated at the beginning of this file. If the environment not set properly, you will not able to run the lab exercises.
+2. From top right corner, click on the 'Select kernel' button. It will open the Command pallete with avilable python environments, select the one with name 'venv' which we created and activated at the beginning of this file. If the environment not set properly, you will not able to run the lab exercises.
 
-3. The from the Setup-test.ipynb note book run first cell. To run hover the mouse and click on Run button
+3. In the Setup-test.ipynb note book run first cell. To run it, hover the mouse and click on Run button(refer below example screenshot)
 
 ![Run](./images/step6.png)
 
 This will take 10-15 seconds. This will load all the environment variables in memory.
-If everything is correct the this cell will run without error.
+If everything is correct then this cell will run without any error.
 
 4. Now calling the gpt35-turbo model asking some simple question. Run the second cell of the notebook.
 If the environment variables are correctly given, then this cell will execute correctly and will give output like

@@ -2,7 +2,7 @@ For this workshop you MUST have the following:
 
 ## Requirements
 - Visual Studio Code
-- Install VS Code Python Extension (Click on the Extensions icon in the left-hand side menu, Search for “Python” in the search bar, Click “Install” next to the “Python” extension)
+- Install VS Code Python Extension
 - Python 3.7
 - A virtual environment tool (venv)
 - An Azure account with Open AI access granted
@@ -11,10 +11,21 @@ For this workshop you MUST have the following:
 
 ## OpenAI subscription and deployments
 * Create an Azure OpenAI resource with your unique name and given region > [Steps](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource) (Select Option 1: Allow all networks)
-* Create 'gpt-35-turbo','text-embedding-ada-002' &  'text-davinci-003' deployments > [Steps](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)
+
+* Create 'gpt-35-turbo','text-embedding-ada-002' &  'text-davinci-003' model deployments
+> :warning: VERY IMPORTANT:
+1. Select the region assigned in excel sheet its mostly 'West Europe'
+2. In **Advanced options**, for the Tokens per Minute Rate Limit, adjust the Tokens per Minute (TPM) to set the effective rate limit as follow:
+- gpt-35-turbo             - 20000 
+- text-embedding-ada-002   - 20000
+- text-davinci-003         - 10000
+
+- [Steps to deploy model](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)
+
 
 ### VsCode
 * Install [Visual Studio Code](https://code.visualstudio.com/) if not installed.
+* Python Extension - Click on the Extensions icon in the left-hand side menu, Search for “Python” in the search bar, Click “Install” next to the “Python” extension
 
 ### Python
 * Install [Python 3.7](https://www.python.org/downloads/release/python-31011/) (Python version must be <= 3.11 if you have higher version installed)
@@ -57,6 +68,8 @@ pip install -r requirements.txt
 ```
 
 ### Create a sample Azure SQL DB with Adventureworks sample data
+#### As most of you working in common Azure subscriptions, make sure you have unique identifier(ex. your name,id etc) for Azure resources you create in order to easily identified.
+
 * Open the workshop repo folder in VS Code editor.
 
 * Insert your [subscription ID](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) in the file [createAll.ps1](./scripts/createAll.ps1). Add your unique identifier in YOUR_UNIQUE_IDENTIFIER you are using common Azure subscription. Add Azure region given to you. Save the file.
@@ -77,15 +90,21 @@ pip install -r requirements.txt
 
 * Login to the azure portal and login with a user that has administrator permissions
 * Open the cloud shell(in PowerShell mode) in the azure portal as follows:
+
 ![Cloud shell](./images/step2.png)
 
 * Upload the files in the scripts folder: "createAll.ps1" and "deployAll.bicep" ONE BY ONE by using the upload file button in the cloud shell
+
 ![Upload](./images/step3.png)
 
 * Run ./createAll.ps1
+
 ![Upload](./images/step4.png)
+
 NOTE: This takes time(~5 minutes) so be patient
+
 You should get an Azure SQL server with a DB name as you passed for <SQLDBNAME>
+
 ![Upload](./images/step5.png)
 
 
@@ -131,7 +150,9 @@ Once the enviornment is setup its best to test if everything is working.
 2. From top right corner click on the 'Select kernel' button. It will open the Command pallete with avilable python environments, select the one with name 'venv' which we created and activated at the beginning of this file. If the environment not set properly, you will not able to run the lab exercises.
 
 3. The from the Setup-test.ipynb note book run first cell. To run hover the mouse and click on Run button
+
 ![Run](./images/step6.png)
+
 This will take 10-15 seconds. This will load all the environment variables in memory.
 If everything is correct the this cell will run without error.
 
@@ -141,3 +162,5 @@ If the environment variables are correctly given, then this cell will execute co
 If you see above output then the Setup is complete and you are ready for the workshop.
 If you don't get above output or get any errors, you need to check the errors, may be correct the environment variables(mostly) and click on "Restart" one top menu to reload the python environment and start executing cell 1 again.
 5. Once you are done with above, we are ready for workshop labs.
+
+---------------------------------------------XXXXXXXXXXXXXXXXXXXXXXXX---------------------------------------

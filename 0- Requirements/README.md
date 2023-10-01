@@ -10,7 +10,7 @@ For this workshop you MUST have the following:
 ## Preparation
 
 ## OpenAI subscription and deployments
-* Create an Azure OpenAI resource with your unique name and given region > [Steps](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource) (Select Option 1: Allow all networks)
+* Create an Azure OpenAI resource in the assigned Azure subscription with your unique name and given region > [Steps](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource) (Select Option 1: Allow all network)
 
 * Create 'gpt-35-turbo','text-embedding-ada-002' &  'text-davinci-003' model deployments(one by one)
 > :warning: VERY IMPORTANT:

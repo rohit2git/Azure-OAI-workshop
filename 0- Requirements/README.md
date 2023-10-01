@@ -118,13 +118,14 @@ Now all the necessary resources in Azure portal are deployed.
 
 # IMPORTANT!
 ### Setup environment variables
-* Rename the '.env.template' file to '.env' and modify all the endpoints and api keys for all openai deployments as follows:
+* Rename the '.env.template' file to '.env' and modify all the endpoints and api keys for all OpenAi deployments as follows:
+  (Get these values from Aure Portal and Azure AI Studio)
 ```
 OPENAI_DEPLOYMENT_ENDPOINT ="<your openai endpoint>" 
 OPENAI_API_KEY = "<your openai api key>"
 
 OPENAI_DEPLOYMENT_NAME = "<your gpt35 deployment name>"
-OPENAI_DEPLOYMENT_VERSION = "<gpt35 api version>"    #"2023-07-01-preview"
+OPENAI_DEPLOYMENT_VERSION = "2023-07-01-preview"   
 
 OPENAI_ADA_EMBEDDING_DEPLOYMENT_NAME = "<your text embedding ada deployment name>"
 

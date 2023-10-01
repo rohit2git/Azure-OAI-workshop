@@ -43,20 +43,20 @@ Change directory to OpenAI workshop directory cloned above
             pip3 install virtualenv
         ```
 * **Creation of virtualenv:**\
-        - Windows\
+        * Windows\
         ```
-        python -m virtualenv venv (in the OpenAI workshop directory)
+        python -m virtualenv venv #(in the OpenAI workshop directory)
         ```
-        - Mac\
+        * Mac\
         ```
         virtualenv -p python3 <desired-path>
         ```
 * **Activate the environment:**
-    - Windows:
+    * Windows:
     ```
         .\venv\Scripts\activate.ps1
     ```
-    - Mac
+    * Mac
     ```
     source <desired-path>/bin/activate
     ```

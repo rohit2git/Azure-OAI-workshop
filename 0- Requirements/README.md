@@ -40,17 +40,17 @@ Change directory to OpenAI workshop directory cloned above
 *  **Installation:**\
         - To install virtualenv via pip run:\
         ``` 
-            $ pip3 install virtualenv
+            pip3 install virtualenv
         ```
 * **Creation of virtualenv:**\
         - Windows\
         ```
-        $ python -m virtualenv venv (in the OpenAI workshop directory)
+        python -m virtualenv venv (in the OpenAI workshop directory)
         ```
   
-        - Mac  
+        - Mac\
         ```
-        $ virtualenv -p python3 <desired-path>
+        virtualenv -p python3 <desired-path>
         ```
 * **Activate the environment:**
     - Windows:
@@ -59,7 +59,7 @@ Change directory to OpenAI workshop directory cloned above
     ```
     - Mac
     ```
-    $ source <desired-path>/bin/activate
+    source <desired-path>/bin/activate
     ```
 
 ### Install all libraries in your virtual environment
@@ -90,7 +90,7 @@ pip install -r requirements.txt
     * A Resource group ```"rg-openai-workshop-"+ yourUniqueIdentifier + "-" + randomstring"```
     * An Azure SQL server called "<SQLSERVERNAME>+ randomstring", SQL DB(with an AdventureWorks DB) and Firewall rule 
 
-* Login to the azure portal and login with a user that has administrator permissions
+* Login to the Azure portal with a user that has administrator permissions
 * Open the cloud shell(in PowerShell mode) in the azure portal as follows:
 
 ![Cloud shell](./images/step2.png)
@@ -99,7 +99,7 @@ pip install -r requirements.txt
 
 ![Upload](./images/step3.png)
 
-* Run ./createAll.ps1
+* Run ``` ./createAll.ps1 ```
 
 ![Upload](./images/step4.png)
 

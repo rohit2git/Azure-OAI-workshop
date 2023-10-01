@@ -15,7 +15,7 @@ For this workshop you MUST have the following:
 * Create 'gpt-35-turbo','text-embedding-ada-002' &  'text-davinci-003' model deployments(one by one)
 > :warning: VERY IMPORTANT:
 1. Select the region assigned in excel sheet its mostly 'West Europe'
-2. In **Advanced options**, for the Tokens per Minute Rate Limit, adjust the Tokens per Minute (TPM) to set the effective rate limit as follow:
+2. In **Advanced options**, for the Tokens per Minute Rate Limit, adjust the Tokens per Minute (TPM) to set the effective rate limit as follows:
 - gpt-35-turbo             - 20K 
 - text-embedding-ada-002   - 20K
 - text-davinci-003         - 10K
@@ -25,10 +25,10 @@ For this workshop you MUST have the following:
 
 ### VsCode
 * Install [Visual Studio Code](https://code.visualstudio.com/) if not installed.
-* Python Extension - Click on the Extensions icon in the left-hand side menu, Search for “Python” in the search bar, Click “Install” next to the “Python” extension
+* Python Extension: Click on the Extensions icon in the left-hand side menu, Search for “Python” in the search bar, and click “Install” next to the “Python” extension
 
 ### Python
-* Install [Python 3.7](https://www.python.org/downloads/release/python-31011/) (Python version must be <= 3.11 if you have higher version installed)
+* Install [Python 3.7](https://www.python.org/downloads/release/python-31011/) (Python version must be <= 3.11 if you have higher version installed.)
 
 ### Clone the Open AI workshop Git repo
 Using Windows/Mac Terminal
@@ -36,21 +36,21 @@ Using Windows/Mac Terminal
 git clone git@github.com:rohit2git/Azure-OAI-workshop.git
 ```
 ### Python3 Virtualenv Setup
-*  Installation
-        To install virtualenv via pip run:
+*  **Installation:**
+        - To install virtualenv via pip run:
         ``` 
             $ pip3 install virtualenv
         ```
-* Creation of virtualenv:
-    - Windows
-    ```
-    $ python -m virtualenv venv (in the openAI workshop directory)
-    ```
-    - Mac
-    ```
-    $ virtualenv -p python3 <desired-path>
-    ```
-* Activate the environment
+* **Creation of virtualenv:**
+        - Windows
+        ```
+        $ python -m virtualenv venv (in the openAI workshop directory)
+        ```
+        - Mac
+        ```
+        $ virtualenv -p python3 <desired-path>
+        ```
+* **Activate the environment:**
     - Windows:
     ```
         .\venv\Scripts\activate.ps1

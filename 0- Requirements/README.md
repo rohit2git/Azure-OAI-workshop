@@ -47,7 +47,6 @@ Change directory to OpenAI workshop directory cloned above
         ```
         python -m virtualenv venv (in the OpenAI workshop directory)
         ```
-  
         - Mac\
         ```
         virtualenv -p python3 <desired-path>

@@ -45,18 +45,18 @@ Change directory to OpenAI workshop directory cloned above
 * **Creation of virtualenv:**\
         - Windows\
         ```
-        $ python -m virtualenv venv (in the openAI workshop directory)
+        $ python -m virtualenv venv (in the openAI workshop directory)\
         ```
         - Mac\
         ```
         $ virtualenv -p python3 <desired-path>
         ```
-* **Activate the environment:**\
-    - Windows:\
+* **Activate the environment:**
+    - Windows:
     ```
         .\venv\Scripts\activate.ps1
     ```
-    - Mac\
+    - Mac
     ```
     $ source <desired-path>/bin/activate
     ```

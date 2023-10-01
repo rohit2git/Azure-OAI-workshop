@@ -73,13 +73,13 @@ pip install -r requirements.txt
 
 * Open the workshop repo folder in VS Code editor.
 
-* Insert your [subscription ID](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) in the file [createAll.ps1](./scripts/createAll.ps1). Add your unique identifier in YOUR_UNIQUE_IDENTIFIER you are using common Azure subscription. Add Azure region given to you. Save the file.
+* In **0- Requirements\scripts\createAll.ps1** - Insert your [subscription ID](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription) in the file [createAll.ps1](./scripts/createAll.ps1). Add your unique identifier in YOUR_UNIQUE_IDENTIFIER you are using common Azure subscription. Add Azure region given to you. Save the file.
     ```
     $SubscriptionId = '<AZURE SUBSCRIPTION ID>'
     $yourUniqueIdentifier = "<YOUR_UNIQUE_IDENTIFIER>"  # e.g. "johnsmith"
     $location = "<AZURE_REGION>"
     ```
-* Insert a name for your sql server and DB in the file [deployAll.bicep](./scripts/deployAll.bicep). For these names make sure to add unique identifier to your sql server as its common Azure subscription you all are using. Add Azure region given to you. The DB server endpoint will be needed in next steps.
+* In **0- Requirements\scripts\deployAll.bicep** - Insert a name for your sql server and DB in the file [deployAll.bicep](./scripts/deployAll.bicep). For these names make sure to add unique identifier to your sql server as its common Azure subscription you all are using. Add Azure region given to you. The DB server endpoint will be needed in next steps.
     ```
     param serverName string = '<SQLSERVERNAME>'
     param databaseName string = '<SQLDBNAME>'

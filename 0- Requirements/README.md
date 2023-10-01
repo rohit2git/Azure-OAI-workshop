@@ -36,6 +36,7 @@ Using Windows/Mac Terminal
 git clone git@github.com:rohit2git/Azure-OAI-workshop.git
 ```
 ### Python3 Virtualenv Setup
+Change directory to OpenAI workshop directory cloned above
 *  **Installation:**
         - To install virtualenv via pip run:
         ``` 

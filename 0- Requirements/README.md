@@ -37,26 +37,26 @@ git clone git@github.com:rohit2git/Azure-OAI-workshop.git
 ```
 ### Python3 Virtualenv Setup
 Change directory to OpenAI workshop directory cloned above
-*  **Installation:**
-        - To install virtualenv via pip run:
+*  **Installation:**\
+        - To install virtualenv via pip run:\
         ``` 
             $ pip3 install virtualenv
         ```
-* **Creation of virtualenv:**
-        - Windows
+* **Creation of virtualenv:**\
+        - Windows\
         ```
         $ python -m virtualenv venv (in the openAI workshop directory)
         ```
-        - Mac
+        - Mac\
         ```
         $ virtualenv -p python3 <desired-path>
         ```
-* **Activate the environment:**
-    - Windows:
+* **Activate the environment:**\
+    - Windows:\
     ```
         .\venv\Scripts\activate.ps1
     ```
-    - Mac
+    - Mac\
     ```
     $ source <desired-path>/bin/activate
     ```

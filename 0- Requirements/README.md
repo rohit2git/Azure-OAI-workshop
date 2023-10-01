@@ -16,9 +16,9 @@ For this workshop you MUST have the following:
 > :warning: VERY IMPORTANT:
 1. Select the region assigned in excel sheet its mostly 'West Europe'
 2. In **Advanced options**, for the Tokens per Minute Rate Limit, adjust the Tokens per Minute (TPM) to set the effective rate limit as follow:
-- gpt-35-turbo             - 20000 
-- text-embedding-ada-002   - 20000
-- text-davinci-003         - 10000
+- gpt-35-turbo             - 20K 
+- text-embedding-ada-002   - 20K
+- text-davinci-003         - 10K
 
 - [Steps to deploy model](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)
 

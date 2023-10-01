@@ -108,7 +108,8 @@ You should get an Azure SQL server with a DB name as you passed for <SQLDBNAME>
 
 * This PowerShell script will create:
     * A Resource group ```"rg-openai-workshop-"+ yourUniqueIdentifier + "-" + randomstring"```
-    * An Azure SQL server called ```<SQLSERVERNAME> + randomstring```, SQL DB(with an AdventureWorks DB) and Firewall rule
+    * An Azure SQL server called ```<SQLSERVERNAME> + randomstring```, SQL DB(with an AdventureWorks DB) and
+    * Firewall rule
     * 
 ## Azure Cognitive services speech
 * Go to Azure portal and [Create a Speech resource](https://portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices). Select the Resource group created above, give your unique name and region.

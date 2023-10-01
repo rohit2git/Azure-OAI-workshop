@@ -61,9 +61,9 @@ Change directory to OpenAI workshop directory cloned above
     source <desired-path>/bin/activate
     ```
 
-### Install all libraries in your virtual environment
+### Install all libraries in your virtual environment 
 
-* Make sure you have the requirements installed in your Python environment using (in the openAI workshop directory)
+* Make sure you have the requirements installed in your Python environment using (it will take around **10 minutes** to finish)
 ```
 pip install -r requirements.txt
 ```

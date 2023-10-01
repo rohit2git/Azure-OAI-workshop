@@ -1,4 +1,5 @@
-For this workshop you MUST have the following:
+### For this workshop, you **must** have the following:
+(It should take around ~1 hour to complete this setup.)
 
 ## Requirements
 - Visual Studio Code

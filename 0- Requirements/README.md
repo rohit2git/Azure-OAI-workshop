@@ -85,10 +85,8 @@ pip install -r requirements.txt
     param databaseName string = '<SQLDBNAME>'
     param location string = '<AZURE_REGION>'
     ```
-* This powershell script will create:
-    * A Resource group ```"rg-openai-workshop-"+ yourUniqueIdentifier + "-" + randomstring"```
-    * An Azure SQL server called "<SQLSERVERNAME>+ randomstring", SQL DB(with an AdventureWorks DB) and Firewall rule 
-
+- Time to run above PowerShell script '0- Requirements\scripts\createAll.ps1' to deploy SQL resources in Azure.
+  
 * Login to the Azure portal with a user that has administrator permissions
 * Open the cloud shell(in PowerShell mode) in the azure portal as follows:
 
@@ -108,7 +106,10 @@ You should get an Azure SQL server with a DB name as you passed for <SQLDBNAME>
 
 ![Upload](./images/step5.png)
 
-
+* This PowerShell script will create:
+    * A Resource group ```"rg-openai-workshop-"+ yourUniqueIdentifier + "-" + randomstring"```
+    * An Azure SQL server called "<SQLSERVERNAME>+ randomstring", SQL DB(with an AdventureWorks DB) and Firewall rule
+    * 
 ## Azure Cognitive services speech
 * Go to Azure portal and [Create a Speech resource](https://portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices). Select the Resource group created above, give your unique name and region.
 

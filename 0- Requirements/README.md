@@ -96,11 +96,11 @@ pip install -r requirements.txt
 
 ![Upload](./images/step3.png)
 
-* Run ``` ./createAll.ps1 ```
+* Run ``` ./createAll.ps1 ``` in CloudShell
 
 ![Upload](./images/step4.png)
 
-NOTE: This takes time(~5 minutes) so be patient
+NOTE: This command takes ~5 minutes.
 
 You should get an Azure SQL server with a DB name as you passed for <SQLDBNAME>
 

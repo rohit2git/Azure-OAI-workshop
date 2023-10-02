@@ -13,13 +13,12 @@
 ## OpenAI subscription and deployments
 * Create an Azure OpenAI resource in the assigned Azure subscription with your unique name and given region > [Steps](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource) (Select Option 1: Allow all network)
 
-* Create 'gpt-35-turbo','text-embedding-ada-002' &  'text-davinci-003' model deployments(one by one)
+* Create 'gpt-35-turbo','text-embedding-ada-002' model deployments(one by one)
 > :warning: VERY IMPORTANT:
 1. Select the region assigned in excel sheet its mostly 'West Europe'
 2. In **Advanced options**, for the Tokens per Minute Rate Limit, adjust the Tokens per Minute (TPM) to set the effective rate limit as follows:
 - gpt-35-turbo             - 20K 
 - text-embedding-ada-002   - 20K
-- text-davinci-003         - 10K
 
 - [Steps to deploy model](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model)
 

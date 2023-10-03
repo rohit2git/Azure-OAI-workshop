@@ -10,36 +10,11 @@ This repository contains Python code examples that demonstrate how to use the Az
 - **Azure OpenAI**  : Embedding model.
 - **Speech to Text**: Transcribe spoken language into written text.
 
-## Prerequisites
-
-- Python 3.7.1 or later
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/cognitive-services/)
-- The Azure Speech service - You'll need to [create a Speech resource](https://portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices) in the Azure portal to get your API keys.
-- AzureOpenAI [Click here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=programming-language-python)  
-  
----  
-
-## Setup
-
-1. Install the necessary Python package dependencies:
-
-    ```shell
-    pip install -r requirements.txt
-    ```
-
-2. Clone the repository:
-
-    ```shell
-    git clone https://github.com/vladfeigin/openaiworkshop.git
-    cd openaiworkshop
-    ```  
----
-
 ## Usage
 
-1. Replace the placeholders in the Python code files with your Azure Speech Service API keys and service region.
+1. Make sure you have replaced the placeholders in the Python code files with your Azure Speech Service API keys and service region.
 
-2. **Text to Speech**  
+2. **Speech to Text**  
     Taken from the documentation's TTS "Getting started" guide:
     [Click Here](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/get-started-speech-to-text?tabs=macos%2Cterminal&pivots=programming-language-python)  
     To convert text to speech, run:
@@ -50,7 +25,7 @@ This repository contains Python code examples that demonstrate how to use the Az
 
     This script takes a text input and converts it into speech, saving the output as an audio file.
 
-3. **Speech to Text**  
+3. **Text to Speech**  
     Taken from the documentation's STT "Getting started" guide:
     [Click Here](https://learn.microsoft.com/en-us/azure/cognitive-services/Speech-Service/get-started-text-to-speech?tabs=macos%2Cterminal&pivots=programming-language-python)  
     To transcribe speech into text, run:
